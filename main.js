@@ -13,13 +13,13 @@ function checkCookies(){
         case "2":
             document.cookie = "redo=1";
         break;
-            
+
         case "3":
             document.cookie = "redo=2";
         break;
 
         default:
-            document.cookie = "redo=3"
+            document.cookie = "redo=3";
     }
 }
 
@@ -41,7 +41,6 @@ function randomValues(data){
     const selectedValues = shuffled.slice(0, 24);
     return selectedValues;
 }
-
 async function generateBingoBoard(filename) {
     fetch(filename).then((res) => res.text()).then((text) => {
         text = JSON.parse(text);
@@ -49,22 +48,28 @@ async function generateBingoBoard(filename) {
 
         const boardContainer = document.getElementById('bingo-container');
         
-        checkCookies();
-        const cookies = cookiesToDictionary();
+        const initialCookies = cookiesToDictionary(); 
+        const canShuffle = initialCookies["redo"] !== "0";
+
+        checkCookies(); 
+
+        const updatedCookies = cookiesToDictionary(); 
+        
         let selectedValues;
         
-        if(cookies["redo"] != "0"){
+        if (canShuffle) {
             selectedValues = randomValues(data);
-            document.cookie = `words=${JSON.stringify(selectedValues)};`;
-        }else{
-            selectedValues = JSON.parse(cookies["words"]);
+            document.cookie = `words=${JSON.stringify(selectedValues)}; path=/`;
+        } else {
+            selectedValues = JSON.parse(updatedCookies["words"]);
         }
-        
+
+        if ("redo" in updatedCookies) {
+            document.getElementById("redos").innerHTML = updatedCookies["redo"];
+        }       
         
 
-        // 2. Create the table element
         const table = document.createElement('table');
-        // Removed setAttribute('border', '1') because CSS handles this now
         
         let valueIndex = 0;
 
@@ -74,7 +79,6 @@ async function generateBingoBoard(filename) {
             for (let c = 0; c < 5; c++) {
                 const cell = document.createElement('td');
                 
-                // 3. Check if it's the middle cell (Index 2,2)
                 if (r === 2 && c === 2) {
                     cell.textContent = "FREE";
                     cell.classList.add('free-space');
@@ -87,7 +91,6 @@ async function generateBingoBoard(filename) {
                 cell.addEventListener('click', function() {
                     this.classList.toggle('marked');
                 });
-                // -------------------------------
                 
                 row.appendChild(cell);
             }
