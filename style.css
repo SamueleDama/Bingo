@@ -1,0 +1,67 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container for the Board */
+#bingo-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Table Design */
+table {
+    border-collapse: separate;
+    border-spacing: 8px; /* Adds a gap between cells */
+    margin: 0 auto;
+}
+
+/* Individual Cell Styling */
+td {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+/* Hover Effect */
+td:hover:not(.free-space) {
+    background-color: #edf2ff;
+    border-color: #4c6ef5;
+    transform: translateY(-2px);
+}
+
+/* The "FREE" Space Special Styling */
+.free-space {
+    background-color: #ff8787;
+    color: white;
+    border-color: #fa5252;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Highlighted/Clicked state (Optional functionality) */
+.marked {
+    background-color: #51cf66 !important;
+    color: white !important;
+    border-color: #40c057 !important;
+}
