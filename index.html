@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bingo</title>
+    <title>Bingo Game</title>
     <link rel="stylesheet" href="style.css">
-</link>
 </head>
 <body>
-    <div id="bingo-container"></div>
-    <script src="main.js"></script>
-</body>
+    <div id="page-layout">
+        <aside id="redo-sidebar">
+            <div id="redo-panel">
+                <div class="label">REDOS LEFT</div>
+                <div id="redos"></div>
+            </div>
+        </aside>
 
+        <main id="bingo-container">
+            </main>
+
+        <div class="spacer"></div>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="checkCookies.js"></script>
+</body>
 </html>
