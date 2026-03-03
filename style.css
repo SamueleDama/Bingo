@@ -147,7 +147,7 @@ td:hover:not(.free-space) {
         min-width: 60px;
         min-height: 60px;
         padding: 5px;
-        font-size: 1.0rem;
+        font-size: 0.9rem;
         border-radius: 6px;
     }
 
@@ -183,5 +183,6 @@ td:hover:not(.free-space) {
         display: none;
     }
 }
+
 
 
