@@ -1,1 +1,166 @@
-[]
+[
+    {
+      "name" : "speed",
+      "difficulty": 1,
+    },
+    {
+      "name" : "length",
+      "difficulty": 1,
+    },
+    {
+      "name" : "error",
+      "difficulty": 2,
+    },
+    {
+      "name" : "versor",
+      "difficulty": 3,
+    },
+    {
+      "name" : "pressure",
+      "difficulty": 3,
+    },
+    {
+      "name" : "politecnico",
+      "difficulty": 3,
+    },
+    {
+      "name" : "versor",
+      "difficulty": 3,
+    },
+    {
+      "name" : "fall",
+      "difficulty": 2,
+    },
+  
+    {
+      "name" : "over",
+      "difficulty": 1,
+    },
+  
+    {
+      "name" : "I don't know",
+      "difficulty": 1,
+    },
+  
+    {
+      "name" : "physics",
+      "difficulty": 1,
+    },
+  
+    {
+      "name" : "equation",
+      "difficulty": 1,
+    },
+    {
+      "name" : "integral",
+      "difficulty": 1,
+    },
+    {
+      "name" : "mechanics",
+      "difficulty": 3,
+    },
+    {
+      "name" : "force",
+      "difficulty": 1,
+    },
+    {
+      "name" : "chemical",
+      "difficulty": 3,
+    },
+    {
+      "name" : "notebook",
+      "difficulty": 3,
+    },
+    {
+      "name" : "light",
+      "difficulty": 1,
+    },
+    {
+      "name" : "direction",
+      "difficulty": 1,
+    },
+    {
+      "name" : "phone",
+      "difficulty": 3,
+    },
+    {
+      "name" : "[forgetting a word]",
+      "difficulty": 3,
+    },
+    {
+      "name" : "[uses italian]",
+      "difficulty": 1,
+    },
+    {
+      "name" : "[french word]",
+      "difficulty": 2,
+    },
+    {
+      "name" : "element",
+      "difficulty": 1,
+    },
+    {
+      "name" : "instrument",
+      "difficulty": 3,
+    },
+    {
+      "name" : "liquid",
+      "difficulty": 3,
+    },  
+    {
+      "name" : "solid",
+      "difficulty": 2,
+    },
+    {
+      "name" : "metal",
+      "difficulty": 3,
+    },
+    {
+      "name" : "gear",
+      "difficulty": 3,
+    },
+    {
+      "name" : "six/seven",
+      "difficulty": 3,
+    },
+    {
+      "name" : "break",
+      "difficulty": 1,
+    },
+    {
+      "name" : "[5 uh in 5 minutes]",
+      "difficulty": 3,
+    },
+    {
+      "name" : "[skips a topic]",
+      "difficulty": 2,
+    },
+    {
+      "name" : "newton",
+      "difficulty": 1,
+    },
+    {
+      "name" : "gravity",
+      "difficulty": 2,
+    },
+    {
+      "name" : "derivative",
+      "difficulty": 1,
+    },
+    {
+      "name" : "motion",
+      "difficulty": 1,
+    },
+    {
+      "name" : "fast",
+      "difficulty": 1,
+    },
+    {
+      "name" : "power",
+      "difficulty": 1,
+    },
+    {
+      "name" : "food",
+      "difficulty": 3,
+    }
+]
